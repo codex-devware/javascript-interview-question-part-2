@@ -1,6 +1,6 @@
-# javascript-interview-questi
 
-1.Explain the difference between primitive and reference data types in JavaScript.
+
+# 1.Explain the difference between primitive and reference data types in JavaScript.
 
 # Primitive data types: Numbers, strings, booleans, null, undefined (each value is stored directly in memory)
 # Reference data types: Objects, arrays (store a reference to the location in memory where the actual data resides)
