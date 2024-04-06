@@ -7,6 +7,9 @@
 
 
 let num = 10; // Primitive (number)
+
 let str = "hello"; // Primitive (string)
+
 let obj = { name: "Alice" }; // Reference (object)
+
 let arr = [1, 2, 3]; // Reference (array)
