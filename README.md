@@ -19,11 +19,11 @@ let arr = [1, 2, 3]; // Reference (array)
 
 # Question 2. How do you declare variables in JavaScript? What are the differences between var, let, and const?
 
-# var(function-scoped, can lead to hoisting issues)
+ var(function-scoped, can lead to hoisting issues)
 
-# let(block-scoped, preferred for modern JavaScript)
+ let(block-scoped, preferred for modern JavaScript)
 
-# const(block-scoped, for constant values)
+ const(block-scoped, for constant values)
 
 // var (not recommended for modern JS)
 
@@ -68,3 +68,35 @@ image.addEventListener("click", () => {
 });
 
 
+
+# Question 4: Describe the different types of operators in JavaScript.
+
+#Answer:
+
+#JavaScript offers various operators for performing calculations, comparisons, and other operations:
+#Arithmetic operators ( +, -, *, /, %) for mathematical calculations.
+
+#Comparison operators ( ==, ===, !=, !==, <, >, <=, >=) for comparing values.
+
+#Logical operators ( &&, ||, !) for combining logical expressions.
+
+#Assignment operators ( =, +=, -=, *=, /=, %=) for assigning values ​​and performing operations simultaneously.
+
+#Increment/decrement operators ( ++, --) for increasing or decreasing a variable's value by 1.
+
+#Bitwise operators ( &, |, ^, ~, <<, >>, >>>) for manipulating bits within a number (less common).
+
+
+let a = 5, b = 3;
+
+console.log(a + b);         // Outputs 8 (addition)
+
+console.log(a === b);       // Outputs false (strict equality)
+
+console.log(a > b || b < 0); // Outputs true (logical OR)
+
+let c = 10;
+
+c++;
+
+console.log(c);             // Outputs 11 (post-increment)
