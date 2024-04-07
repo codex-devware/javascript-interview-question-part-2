@@ -170,3 +170,18 @@ console.log(keys); // Output: ["name", "age"]
 let values = Object.values(person);
 
 console.log(values); // Output: ["Alice", 30]
+
+
+
+# Question 8: Explain the concept of prototypes in JavaScript and how they are used in inheritance.
+
+#Prototypes are objects that serve as blueprints for other objects. When you create an object, it inherits properties and methods from its prototype.
+
+
+function Person(name, age) {
+
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
