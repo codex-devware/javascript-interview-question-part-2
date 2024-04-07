@@ -2,8 +2,8 @@
 
 # Question 1.Explain the difference between primitive and reference data types in JavaScript.
 
-# Primitive data types: Numbers, strings, booleans, null, undefined (each value is stored directly in memory)
-# Reference data types: Objects, arrays (store a reference to the location in memory where the actual data resides)
+#Primitive data types: Numbers, strings, booleans, null, undefined (each value is stored directly in memory)
+#Reference data types: Objects, arrays (store a reference to the location in memory where the actual data resides)
 
 
 let num = 10; // Primitive (number)
@@ -144,3 +144,29 @@ greet("John"); // Output: Hello, John!
 // Even though createGreeter has returned, the inner function still remembers the value of greeting
 
 
+
+# Question 7: How do you iterate over the properties of an object in JavaScript? Provide different methods.
+
+#for...in loop (iterates over all properties, including inherited ones)
+
+#Object.keys(object) (returns an array of the object's own property names)
+
+#Object.values(object) (returns an array of the object's own property values)
+
+#Object.entries(object) (returns an array of [key, value] pairs)
+
+
+let person = { name: "Alice", age: 30 };
+
+for (let prop in person) {
+
+    console.log(prop, person[prop]);
+}
+
+let keys = Object.keys(person);
+
+console.log(keys); // Output: ["name", "age"]
+
+let values = Object.values(person);
+
+console.log(values); // Output: ["Alice", 30]
