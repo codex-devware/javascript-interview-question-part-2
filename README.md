@@ -100,3 +100,27 @@ let c = 10;
 c++;
 
 console.log(c);             // Outputs 11 (post-increment)
+
+
+
+
+# Question 5: Write a function that takes an array of numbers and returns the sum of all the elements.
+
+# Answer:
+
+function sum(numbers) {
+
+    let total = 0;
+    for (let num of numbers) {
+        total += num;
+    }
+    return total;
+}
+
+let numbers = [1, 2, 3, 4, 5];
+
+let result = sum(numbers);
+
+console.log(result); // Output: 15
+
+
