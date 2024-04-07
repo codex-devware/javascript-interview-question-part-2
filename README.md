@@ -51,8 +51,8 @@ PI = 10; // This will result in an error, as `const` cannot be reassigned
 
 # Question 3. JavaScript for Dynamic Captions (Optional):
 
-# 1.If you want dynamic captions based on user interaction or data fetching, you can use JavaScript to manipulate the caption content.
-# 2.Access the caption element using document.querySelectorand update its text content using textContentproperty.
+#If you want dynamic captions based on user interaction or data fetching, you can use JavaScript to manipulate the caption content.
+#Access the caption element using document.querySelectorand update its text content using textContentproperty.
 
 
 // Example: Update caption on image click
@@ -122,5 +122,25 @@ let numbers = [1, 2, 3, 4, 5];
 let result = sum(numbers);
 
 console.log(result); // Output: 15
+
+
+
+# Question 6: Explain the concept of closures in JavaScript and provide an example.
+
+#A closure is a function that has access to the variable environment of its outer function, even after the outer function has returned.
+
+
+function createGreeter(greeting) {
+   
+    return function(name) {
+        console.log(greeting + ", " + name + "!");
+    };
+}
+
+let greet = createGreeter("Hello");
+
+greet("John"); // Output: Hello, John!
+
+// Even though createGreeter has returned, the inner function still remembers the value of greeting
 
 
